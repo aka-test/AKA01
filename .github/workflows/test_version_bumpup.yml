@@ -29,10 +29,5 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: "Checkout source code"
-        uses: "actions/checkout@v2"
-        with:
-          ref: ${{ github.ref }}
-          token: ${{ secrets.BOT_USER_TOKEN }}
       - name: "cat package.json"
         run: cat ./package.json
